@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         
         let defaults = UserDefaults.standard
         
+        BillField.text = defaults.string(forKey: "billSaved")
+        
         TipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
         
         splitDefault = defaults.integer(forKey: "defaultSplit")
@@ -32,6 +34,17 @@ class ViewController: UIViewController {
         calculateTip(NSNull())
         
         BillField.becomeFirstResponder()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("view will disappear")
+        
+        let defaults = UserDefaults.standard
+        
+        defaults.set(BillField.text, forKey: "billSaved")
+        
+        defaults.synchronize()
     }
     
     @IBAction func editSplitField(_ sender: Any) {
@@ -46,7 +59,11 @@ class ViewController: UIViewController {
         let tipPercentage = [0.00, 0.15, 0.20, 0.25]
         
         let bill = Double(BillField.text!) ?? 0
-        let split = Int(SplitField.text!) ?? splitDefault
+        var split = Int(SplitField.text!) ?? splitDefault
+        if split < 1{
+            split = 1
+            SplitField.text = ""
+        }
         let tip = bill * tipPercentage[TipControl.selectedSegmentIndex]
         
         let total = bill + tip

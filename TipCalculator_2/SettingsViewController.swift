@@ -62,6 +62,7 @@ class SettingsViewController: UIViewController {
     
     func setDefaultSplit(){
         let defaults = UserDefaults.standard
+        defaultSplit = max(defaultSplit, 1)
         defaults.set(defaultSplit, forKey: "defaultSplit")
         
         defaults.synchronize()

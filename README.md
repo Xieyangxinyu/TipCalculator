@@ -21,7 +21,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [x] Improving the original UI
+* [x] Improving the original UI
+* [x] Split cannot be zero
 
 ## Video Walkthrough 
 
