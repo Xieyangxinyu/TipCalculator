@@ -14,7 +14,6 @@
 		EA90644C21E811F800A61BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA90644A21E811F800A61BBB /* LaunchScreen.storyboard */; };
 		EA90645721E811F800A61BBB /* TipCalculator_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90645621E811F800A61BBB /* TipCalculator_2Tests.swift */; };
 		EA90646221E811F800A61BBB /* TipCalculator_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90646121E811F800A61BBB /* TipCalculator_2UITests.swift */; };
-		EA90647021E81AB900A61BBB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90646F21E81AB900A61BBB /* TableViewCell.swift */; };
 		EA9064E821E83C2D00A61BBB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9064E721E83C2D00A61BBB /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,6 @@
 		EA90645D21E811F800A61BBB /* TipCalculator_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculator_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA90646121E811F800A61BBB /* TipCalculator_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculator_2UITests.swift; sourceTree = "<group>"; };
 		EA90646321E811F800A61BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA90646F21E81AB900A61BBB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		EA9064E721E83C2D00A61BBB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 				EA90644321E811F700A61BBB /* ViewController.swift */,
 				EA90644521E811F700A61BBB /* Main.storyboard */,
 				EA9064E721E83C2D00A61BBB /* SettingsViewController.swift */,
-				EA90646F21E81AB900A61BBB /* TableViewCell.swift */,
 				EA90644821E811F800A61BBB /* Assets.xcassets */,
 				EA90644A21E811F800A61BBB /* LaunchScreen.storyboard */,
 				EA90644D21E811F800A61BBB /* Info.plist */,
@@ -262,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA90647021E81AB900A61BBB /* TableViewCell.swift in Sources */,
 				EA90644421E811F700A61BBB /* ViewController.swift in Sources */,
 				EA90644221E811F700A61BBB /* AppDelegate.swift in Sources */,
 				EA9064E821E83C2D00A61BBB /* SettingsViewController.swift in Sources */,
